@@ -1,0 +1,15 @@
+{
+  "name": "dotfiles",
+  "description": "wrapper repo for wincent/wincent",
+  "version": "0.0.1",
+  "main": "/dev/null",
+  "private": true,
+  "repository": "https://github.com/wincent/dotfiles.git",
+  "author": "Greg Hurrell <greg@hurrell.net>",
+  "license": "Unlicense",
+  "scripts": {
+    "ci": "yarn format:check",
+    "format:check": "npx prettier --check \"**/*.md\" \"*.{md,json}\"",
+    "format": "npx prettier --write \"**/*.md\" \"*.{md,json}\""
+  }
+}

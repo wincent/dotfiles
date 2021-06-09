@@ -1,0 +1,3 @@
+[submodule "wincent"]
+	path = wincent
+	url = https://github.com/wincent/wincent.git
