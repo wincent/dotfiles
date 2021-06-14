@@ -1,12 +1,11 @@
 #!/bin/bash
 
-DIR=$(dirname "$BASH_SOURCE")/..
+ROOT=$(dirname "$BASH_SOURCE")/..
+INSTALL="$ROOT/bin/install"
+DOTFILES="$ROOT/wincent"
 
-cd $DIR
+cd $DOTFILES
 
-# TODO: move this into dotfiles
-apt-get install -y neovim ripgrep
-
-cd wincent
 git submodule update --init
-YOLO=1 ./install dotfiles
+
+"$INSTALL" dotfiles

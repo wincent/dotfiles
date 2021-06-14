@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Wrapper around the real install script that sets some necessary
+# environment variables to make it actaully work (both of these
+# due to the fact that the script runs as `root` in these containers
+# so you can't tell "who" you are).
+
+DOTFILES=$(dirname "$BASH_SOURCE")/../wincent
+
+cd $DOTFILES
+
+FIG_IDENTITY=wincent YOLO=1 ./install "$@"
