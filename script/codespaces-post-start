@@ -8,4 +8,4 @@ cd $DOTFILES
 
 git submodule update --init
 
-"$INSTALL" dotfiles
+NON_INTERACTIVE=1 "$INSTALL" dotfiles
