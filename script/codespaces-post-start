@@ -1,3 +1,12 @@
-#!/bin/sh
+#!/bin/bash
 
+DIR=$(dirname "$BASH_SOURCE")/..
+
+cd $DIR
+
+# TODO: move this into dotfiles
 apt-get install -y neovim ripgrep
+
+cd wincent
+git submodule update --init
+YOLO=1 ./install dotfiles

@@ -1,5 +1,0 @@
-#!/bin/sh
-
-# Example set-up that we might want to run:
-#
-# git submodule update --init
