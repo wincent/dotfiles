@@ -9,3 +9,7 @@ cd $DOTFILES
 git submodule update --init
 
 NON_INTERACTIVE=1 "$INSTALL" dotfiles
+
+if ! grep -q LC_ALL ~/.zshenv.d/locale.zsh 2> /dev/null; then
+  echo "export LC_ALL=en_US.utf8" >> ~/.zshenv.d/locale.zsh
+fi
