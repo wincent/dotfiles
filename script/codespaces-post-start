@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ROOT=$(dirname "$BASH_SOURCE")/..
+ROOT=$(cd $(dirname "$BASH_SOURCE")/..; pwd)
 INSTALL="$ROOT/bin/install"
 DOTFILES="$ROOT/wincent"
 
