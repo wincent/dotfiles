@@ -11,7 +11,3 @@ cd $DOTFILES
 git submodule update --init
 
 NON_INTERACTIVE=1 "$INSTALL" "$@"
-
-ln -sf "${ROOT}/.zshenv.d/locale.zsh" ~/.zshenv.d/locale.zsh
-ln -sf "${ROOT}/.zshrc.local" ~/.zshrc.local
-ln -sf "${ROOT}/.tmux-local.conf" ~/.tmux-local.conf
