@@ -4,7 +4,7 @@ You're probably looking for [wincent/wincent](https://github.com/wincent/wincent
 
 ## Details
 
-I started my dotfiles repo back in 2009 and called it `wincent`, in part because I knew it would eventually contain much more than just "dotfiles".
+I started [my dotfiles repo](https://github.com/wincent/wincent) back in 2009 and called it `wincent`, in part because I knew it would eventually contain much more than just "dotfiles".
 
 GitHub has since added some features that rely on a `dotfiles` repo under your user to do special things automatically: for example a `$USER/dotfiles` repo containing a `script/setup` script (or one of several other names) can be used to [customize a Codespaces environment](https://docs.github.com/en/codespaces/setting-up-your-codespace/personalizing-codespaces-for-your-account#dotfiles).
 
@@ -13,7 +13,7 @@ So, the purpose of this repo is:
 1. To serve as a pointer towards [wincent/wincent](https://github.com/wincent/wincent) for human beings.
 2. To serve as a wrapper around the _real dotfiles_ for GitHub tools like Codespaces.
 
-To that end, this repo incorporates the other one via a submodule reference, and contains [some scripts](scripts) that run in the Codespaces environment in order to do set-up.
+To that end, this repo incorporates the other one via a submodule reference, and contains [some scripts](script) that run in the Codespaces environment in order to do set-up.
 
 ## Addendum
 
