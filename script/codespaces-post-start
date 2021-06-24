@@ -11,6 +11,7 @@ DOTFILES="$ROOT/wincent"
 
 cd $DOTFILES
 
-git submodule update --init
+# Must be recursive, otherwise we'll fail with:
+git submodule update --init --recursive
 
 NON_INTERACTIVE=1 "$INSTALL" "$@"
