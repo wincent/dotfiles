@@ -1,13 +1,9 @@
 #!/bin/bash
 
-if [ ! -t 0 ]; then
-  # stdin is not a tty; try to capture everything that happens to a log file.
-  exec > >(tee -i $HOME/codespaces-post-start.log)
-  exec 2>&1
-  set -x
-fi
-
+exec > >(tee -i $HOME/codespaces-post-start.log)
+exec 2>&1
 set -e
+set -x
 
 ROOT=$(cd $(dirname "$BASH_SOURCE")/..; pwd)
 INSTALL="$ROOT/bin/install"
