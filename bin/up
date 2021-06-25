@@ -1,0 +1,16 @@
+#!/bin/sh
+
+#
+# Convenience script to update submodule to latest.
+#
+
+set -e
+
+DOTFILES=$(dirname "$BASH_SOURCE")/../wincent
+
+git -C "$DOTFILES" pull
+
+git commit \
+  -m "$(git submodule summary -n 1 | awk 'NR==2' | cut -c 5-)" \
+  -m "$(git submodule summary)" \
+  -e -- "$DOTFILES"
